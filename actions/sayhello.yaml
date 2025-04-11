@@ -1,0 +1,22 @@
+---
+name: sayhello
+description: "call to say hello"
+enabled: true
+
+runner_type: "local-shell-script"
+entry_point: sayhello.sh 
+
+parameters:
+  say_what:
+    type: string
+    required: true
+    default: "call to say hello" 
+    description: break the ice
+    position: 1
+
+  pause_time: 
+    type: integer
+    required: false
+    default: 3
+    description: anybody's home?
+    position: 2

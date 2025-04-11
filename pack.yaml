@@ -1,0 +1,19 @@
+---
+ref: testconc
+name: testconc
+
+keywords:
+  - st2sucks
+  - python38ordie
+  - hopeitworks
+
+version: 10.100.1000
+
+dependencies: 
+  - core
+
+author: notme
+email: notme@notme.org
+
+contributors:
+  - "notme <notme.org>" 

@@ -1,0 +1,12 @@
+---
+name: sayhello
+pack: testconc
+description: constraining max run 
+enabled: true
+
+resource_ref: testconc.sayhello
+
+policy_type: action.concurrency
+parameters: 
+  action: delay
+  threshold: 1
