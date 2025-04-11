@@ -1,6 +1,7 @@
 ---
 ref: testconc
 name: testconc
+description: pack to test and remove
 
 keywords:
   - st2sucks
