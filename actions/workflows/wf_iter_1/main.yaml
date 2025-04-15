@@ -1,0 +1,31 @@
+---
+version: 1.0.0
+description:  launch action xx times
+
+input:
+  - say_what: null 
+  - pause_time: null 
+  - iterations: null 
+
+vars:
+  - status: null 
+
+
+tasks:
+  running_sayhello:
+    action: testconc.sayhello
+    input: 
+      say_what: <% ctx().say_what %>
+      pause_time: <% ctx().pause_time %> 
+    with: 
+      items: <% range(0,10) %>
+      concurrency: 2
+    next: 
+      - when: <% succeeded() %> 
+        publish: 
+          - status: "all good"
+          
+      - when: <% failed() %> 
+        publish: 
+          - status: "it failed"
+          

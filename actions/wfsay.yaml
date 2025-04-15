@@ -1,0 +1,27 @@
+---
+name: wfsay 
+# pack 
+description:  run a worflow 
+enabled: true 
+
+runner_type: orquesta 
+entry_point: workflows/wf_iter_1/main.yaml  
+
+parameters: 
+  say_what: 
+    type: string
+    required: false
+    default: "hello from wfsay"
+    description: need to say something
+    
+  pause_time:
+    type: integer 
+    required: false 
+    default: 45
+    description: pause time
+
+  iterations:
+    type: integer
+    required: true
+    default: 5
+    description: number of times to run  
