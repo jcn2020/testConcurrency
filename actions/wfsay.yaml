@@ -17,7 +17,7 @@ parameters:
   pause_time:
     type: integer 
     required: false 
-    default: 45
+    default: 5
     description: pause time
 
   iterations:

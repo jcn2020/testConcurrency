@@ -9,6 +9,7 @@ input:
 
 vars:
   - status: null 
+  - range: "range(0,5)`"
 
 
 tasks:
@@ -18,7 +19,7 @@ tasks:
       say_what: <% ctx().say_what %>
       pause_time: <% ctx().pause_time %> 
     with: 
-      items: <% range(0, <% ctx().iterations %> ) %>
+      items: {{ ctx().range }}
       concurrency: 2
     next: 
       - when: <% succeeded() %> 
