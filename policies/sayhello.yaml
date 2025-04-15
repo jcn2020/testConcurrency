@@ -2,7 +2,7 @@
 name: sayhello
 pack: testconc
 description: constraining max run 
-enabled: true
+enabled: false
 
 resource_ref: testconc.sayhello
 
