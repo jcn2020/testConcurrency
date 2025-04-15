@@ -18,7 +18,7 @@ tasks:
       say_what: <% ctx().say_what %>
       pause_time: <% ctx().pause_time %> 
     with: 
-      items: <% range(0,10) %>
+      items: <% range(0, <% ctx().iterations %> ) %>
       concurrency: 2
     next: 
       - when: <% succeeded() %> 
