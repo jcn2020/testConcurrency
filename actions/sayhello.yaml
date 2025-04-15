@@ -17,6 +17,6 @@ parameters:
   pause_time: 
     type: integer
     required: false
-    default: 3
+    default: 30
     description: anybody's home?
     position: 2
