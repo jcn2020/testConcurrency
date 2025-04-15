@@ -25,3 +25,9 @@ parameters:
     required: true
     default: 5
     description: number of times to run  
+
+  servers:
+    type: array
+    required: true
+    default: ["vm1", "vm2", "vm3", "vm4"]
+    description: array of vms

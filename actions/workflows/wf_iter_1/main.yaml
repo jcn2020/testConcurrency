@@ -31,4 +31,3 @@ tasks:
       - when: <% failed() %> 
         publish: 
           - status: "it failed"
-          
