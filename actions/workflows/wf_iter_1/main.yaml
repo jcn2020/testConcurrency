@@ -9,7 +9,7 @@ input:
 
 vars:
   - status: null 
-  - range: "range(0,5)`"
+  - range: "range(0,5)"
 
 
 tasks:
